@@ -16,11 +16,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
 
     <style>
-      /* --- CUSTOM STYLES --- */
+
       :root {
-        --bg-color: #fff9fb; /* Lighter pink background */
-        --primary-color: #e91e63; /* Main pink */
-        --secondary-color: #ad1457; /* Darker pink */
+        --bg-color: #fff9fb; 
+        --primary-color: #e91e63; 
+        --secondary-color: #ad1457; 
         --text-color: #444;
         --heading-font: "Caveat", cursive;
         --body-font: "Poppins", sans-serif;
@@ -32,7 +32,10 @@
         color: var(--text-color);
       }
 
-      /* --- Typography --- */
+      body {
+        overflow-x: hidden;
+      }
+
       h1,
       h2,
       h3,
@@ -93,7 +96,6 @@
         border-color: var(--secondary-color);
       }
 
-      /* Modal styling for the confession */
       .modal-content {
         background-color: var(--bg-color);
         border: none;
@@ -183,10 +185,6 @@
     </style>
   </head>
   <body>
-    <!-- ================================================================= -->
-    <!-- --- PERSONALIZATION SECTION --- -->
-    <!-- Change the friend's name and memories below! -->
-    <!-- ================================================================= -->
 
     <!-- Hero Section -->
     <header class="hero">
@@ -203,7 +201,7 @@
     </header>
 
     <main>
-      <!-- Memories Section -->
+
       <section class="section" id="content-zoe" style="background-color: #fff9fb">
         <div class="container fade-in-section">
           <div class="text-center mb-5">
@@ -254,27 +252,9 @@
               </div>
             </div>
             
-            <!-- Memory 2 -->
-          <!-- <div class="col-lg-8">
-              <div class="card p-4">
-                <div class="row g-0 align-items-center">
-                  <div class="col-md-2 text-center">
-                    <div class="icon-circle mb-3 mb-md-0"><i class="bi bi-emoji-laughing-fill"></i></div>
-                  </div>
-                  <div class="col-md-10">
-                    <div class="card-body">
-                      <h3 class="card-title heading-font fs-2">All the laughter</h3>
-                      <p class="card-text">Thinking about that inside joke we have still makes me laugh. You have the best sense of humor.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
+
       </section>
 
-      <!-- Qualities Section (NEW) -->
       <section class="section" style="background-color: #fff">
         <div class="container fade-in-section">
           <div class="text-center mb-5">
@@ -312,7 +292,7 @@
         </div>
       </section>
 
-      <!-- Confession Trigger Section -->
+
       <section class="section text-center" style="background-color: #fff9fb">
         <div class="container fade-in-section">
           <h2 class="display-4">Sedikit Cerita dari Aku</h2>
@@ -356,7 +336,7 @@
       const sections = document.querySelectorAll(".fade-in-section");
 
       const options = {
-        root: null, // it is the viewport
+        root: null, // it is the viewpoA
         threshold: 0.15, // 15% of the item is visible
         rootMargin: "0px",
       };
